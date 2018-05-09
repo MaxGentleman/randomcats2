@@ -1,8 +1,8 @@
 {
-  "name": "Rumplestiltskin",
+  "name": "Random Cats",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "discord.js": "^11.1.0",
     "google-images": "^2.1.0"
