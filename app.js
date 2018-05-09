@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 
+bot.login(process.env.TOKEN);
+
 bot.on('ready', () => {
   bot.user.setGame('[rc!help] meowing');
 });
@@ -53,5 +55,3 @@ bot.on('message', msg => {
     msg.reply('The dev is MaxGentleman#1337 with the help of Laeti#1995');
   }
 });
-
-bot.login(process.env.TOKEN);
