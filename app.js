@@ -34,13 +34,49 @@ bot.on('message', function (message){
 
     case "rc!mg" : message.channel.send('Here is the cat of MaxGentleman https://bit.ly/2HSUH4e')
             break;
+      
+    case "rc!help" : message.channel.send({embed: {
+			    color: 2551860,
+			    author: {
+			      name: bot.user.username,
+			      icon_url: bot.user.avatarURL
+			    },
+			    title: "RandomCats Help commands **rc!help**",
 
-            case "rc!help" : message.channel.send('**1) rc!pic :** Send a random cat picture\n'+
-            '**2) rc!gif :** Send a random cat gif\n'+
-            '**3) rc!dev :** Send a random cat picture\n'+
-            '**4) rc!mg :** Send the cat of MaxGentleman\n'+
-            '**5) rc!laeti :** Show the cat of Laeti');
-            break;
+			    description: "Type these commands to get some help on how to use RandomCats",
+			    fields: [{
+				name: "rc!dev",
+				value: "Say the names of the RandomCats developers"
+			      },
+			      {
+				name: "rc!pic",
+				value: "Send a random cat picture"
+			      },
+			      {
+				name: "rc!gif",
+				value: "Send a random cat gif"
+			      },
+			      {
+				name: "rc!mg",
+				value: "Show the cat of MaxGentleman"
+			      },
+			      {
+				name: "rc!laeti",
+				value: "Show the cat of Laeti"
+			      },
+			      {
+				name: "rc!say ",
+				value: "make RandomCat talk with your own words"
+			      },
+			    ],
+			    timestamp: new Date(),
+			    footer: {
+			      icon_url: bot.user.avatarURL,
+			      text: "© RandomCats"
+			    }
+			  }
+			});
+	    break;
   }
 
 if(message.content.toLowerCase().startsWith('rc!say')) {
