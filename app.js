@@ -41,7 +41,7 @@ bot.on('message', function (message){
 			      name: bot.user.username,
 			      icon_url: bot.user.avatarURL
 			    },
-			    title: "RandomCats Help commands **rc!help**",
+			    title: "RandomCats Help commands",
 
 			    description: "Type these commands to get some help on how to use RandomCats",
 			    fields: [{
@@ -63,10 +63,6 @@ bot.on('message', function (message){
 			      {
 				name: "rc!laeti",
 				value: "Show the cat of Laeti"
-			      },
-			      {
-				name: "rc!say ",
-				value: "make RandomCat talk with your own words"
 			      },
 			    ],
 			    timestamp: new Date(),
