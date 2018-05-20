@@ -74,40 +74,6 @@ bot.on('message', function (message){
 			});
 	    break;
   }
-	
-    if (message.content.startsWith("rc!kick") && ( message.member.roles.find("name", "Staff"))) {
-        // Easy way to get member object though mentions.
-        var member= message.mentions.members.first();
-        if(!(member.roles.find("name", "Staff"))){
-            // Kick
-            member.kick().then((member) => {
-                // Successmessage
-                message.channel.send(":wave: " + member.displayName + " has been successfully kicked :ok_hand: ");
-            }).catch(() => {
-                 // Failmessage
-                message.channel.send("I cannot kick I'm not an admin");
-            });
-        } else {
-            message.channel.send("Cannot kick an admin !");
-        }
-            
-    }
-    
-    if (message.content.startsWith("rc!ban") && message.member.roles.find("name", "Staff")) {
-        // Easy way to get member object though mentions.
-        var member= message.mentions.members.first();
-        if(!(member.roles.find("name", "Staff"))){
-        // Kick
-        member.ban().then((member) => {
-            // Successmessage
-            message.channel.send(":wave: " + member.displayName + " has been successfully banned :ok_hand: ");
-        }).catch(() => {
-             // Failmessage
-            message.channel.send("I cannot ban I'm not an admin");
-        });
-    } else {
-            message.channel.send("Cannot kick an admin !");
-    }
 
 if(message.content.toLowerCase().startsWith('rc!say')) {
   var reason = message.content.substring(6, message.content.length);
