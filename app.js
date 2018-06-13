@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 bot.login(process.env.TOKEN);
 
 bot.on('ready', () => {
-  bot.user.setGame('[rc!help] meowing');
+  bot.user.setGame('[;help] meowing');
 });
 
 var cats;
