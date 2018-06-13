@@ -93,6 +93,32 @@ bot.on('message', function (message){
 			
 	}
 	
+	import { CommandHandler } from "mechan.js";
+import { Collection, Client } from "discord.js";
+import { Database } from "sqlite";
+import { grandayyServer } from "./precheck";
+
+module.exports.init = (handler: CommandHandler, database: Database, client: Client, config: Config) => {
+    handler.createCommand("enlist")
+        .addCheck(grandayyServer)
+        .setDescription("Enlist yourself")
+        .setCategory("Enlistment")
+        .setCallback((context) => {
+            try {
+                let role = context.guild.roles.find(x => x.name === "enlisted");
+                if (context.message.member.roles.some(x => x.name === "enlisted")) {
+                    context.message.reply("You already have the role!");
+                } else {
+                    context.message.member.addRole(role);
+                    context.message.reply("You've been enlisted! :ok_hand:");
+                }
+            } catch (e) {
+                context.channel.send("***Please try again***");
+            }
+            context.message.delete();
+        });
+};
+	
 if(message.content.toLowerCase().startsWith(';say')) {
   var reason = message.content.substring(4, message.content.length);
   message.delete(); 
