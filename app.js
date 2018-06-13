@@ -21,61 +21,61 @@ bot.on('ready', () => {
 bot.on('message', function (message){
   switch(message.content.toLowerCase()){
 
-    case "rc!pic" : cats = Math.floor(Math.random() * (cat.length - 0) + 0);
+    case ";pic" : cats = Math.floor(Math.random() * (cat.length - 0) + 0);
                 message.channel.send(cat[cats]);
             break;
 
-    case "rc!gif" : pos = Math.floor(Math.random() * (po.length - 0) + 0);
+    case ";gif" : pos = Math.floor(Math.random() * (po.length - 0) + 0);
                 message.channel.send(po[pos]);
             break;
 
-    case "rc!laeti" : message.channel.send('Here is the cat of Laeti https://bit.ly/2JVIyrJ')
+    case ";laeti" : message.channel.send('Here is the cat of Laeti https://bit.ly/2JVIyrJ')
             break;
 
-    case "rc!mg" : message.channel.send('Here is the cat of MaxGentleman https://bit.ly/2HSUH4e')
+    case ";mg" : message.channel.send('Here is the cat of MaxGentleman https://bit.ly/2HSUH4e')
             break;
       
-    case "rc!help" : message.channel.send({embed: {
+    case ";help" : message.channel.send({embed: {
 			    color: 16737792,
 			    author: {
 			      name: bot.user.username,
 			      icon_url: bot.user.avatarURL
 			    },
-			    title: "RandomCats Help commands",
+			    title: "Robot Catten Help commands",
 
 			    description: "Type these commands to get some help on how to use RandomCats",
 			    fields: [{
-				name: "rc!dev",
+				name: ";dev",
 				value: "Say the names of the RandomCats developers"
 			      },
 			      {
-				name: "rc!pic",
+				name: ";pic",
 				value: "Send a random cat picture"
 			      },
 			      {
-				name: "rc!gif",
+				name: ";gif",
 				value: "Send a random cat gif"
 			      },
 			      {
-				name: "rc!mg",
+				name: ";mg",
 				value: "Show the cat of MaxGentleman"
 			      },
 			      {
-				name: "rc!laeti",
+				name: ";leati",
 				value: "Show the cat of Laeti"
 			      },
 			    ],
 			    timestamp: new Date(),
 			    footer: {
 			      icon_url: bot.user.avatarURL,
-			      text: "© RandomCats"
+			      text: "© Robot Catten"
 			    }
 			  }
 			});
 	    break;
   }
 
-     if (message.content.startsWith("rc!kick") && ( message.member.roles.find("name", "Moderators"))) {
+     if (message.content.startsWith(";kck") && ( message.member.roles.find("name", "Moderators"))) {
 		// Easy way to get member object though mentions.
 		var member= message.mentions.members.first();
 		if(!(member.roles.find("name", "Staff"))){
