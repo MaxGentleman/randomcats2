@@ -93,15 +93,15 @@ bot.on('message', function (message){
 			
 	}
 	
-if(message.content.toLowerCase().startsWith('rc!say')) {
-  var reason = message.content.substring(6, message.content.length);
+if(message.content.toLowerCase().startsWith(';say')) {
+  var reason = message.content.substring(4, message.content.length);
   message.delete(); 
   message.channel.send(reason);
 }
 });
 
 bot.on('message', msg => {
-  if (msg.content === 'rc!dev') {
+  if (msg.content === ';dev') {
     msg.reply('The dev is MaxGentleman#1337 with the help of Laeti#1995');
   }
 });
