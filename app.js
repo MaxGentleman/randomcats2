@@ -93,14 +93,8 @@ bot.on('message', function (message){
 			
 	}
 	
-	import { CommandHandler } from "mechan.js";
-import { Collection, Client } from "discord.js";
-import { Database } from "sqlite";
-import { grandayyServer } from "./precheck";
-
 module.exports.init = (handler: CommandHandler, database: Database, client: Client, config: Config) => {
-    handler.createCommand("enlist")
-        .addCheck(grandayyServer)
+    handler.createCommand(";enlist")
         .setDescription("Enlist yourself")
         .setCategory("Enlistment")
         .setCallback((context) => {
