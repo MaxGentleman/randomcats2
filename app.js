@@ -75,7 +75,7 @@ bot.on('message', function (message){
 	    break;
   }
 
-     if (message.content.startsWith(";kck") && ( message.member.roles.find("name", "Moderators"))) {
+     if (message.content.startsWith(";kck") && ( message.member.roles.find("name", "Moderators, Admins, Chainsawesome Games, ADMIN"))) {
 		// Easy way to get member object though mentions.
 		var member= message.mentions.members.first();
 		if(!(member.roles.find("name", "Staff"))){
