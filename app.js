@@ -90,7 +90,9 @@ bot.on('message', function (message){
 		} else {
 			message.channel.send("Cannot kick an admin !");
 		}
-			
+	
+	     
+     }
 	}
 	
 module.exports.init = (handler: CommandHandler, database: Database, client: Client, config: Config) => {
