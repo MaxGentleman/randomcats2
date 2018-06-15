@@ -22,10 +22,6 @@ bot.on('ready', () => {
 
 bot.on('message', function (message){
   switch(message.content.toLowerCase()){
-
-    case ";communitycats" : cos = Math.floor(Math.random() * (co.length - 0) + 0);
-                message.channel.send(co[cos]);
-            break;
 		  
     case ";pic" : cats = Math.floor(Math.random() * (cat.length - 0) + 0);
                 message.channel.send(cat[cats]);
@@ -33,6 +29,10 @@ bot.on('message', function (message){
 
     case ";gif" : pos = Math.floor(Math.random() * (po.length - 0) + 0);
                 message.channel.send(po[pos]);
+            break;
+		  
+    case ";communitycats" : cos = Math.floor(Math.random() * (co.length - 0) + 0);
+                message.channel.send(co[cos]);
             break;
 
     case ";laeti" : message.channel.send('Here is the cat of Laeti https://bit.ly/2JVIyrJ')
