@@ -63,12 +63,12 @@ bot.on('message', function (message){
 				value: "Send a random cat gif"
 			      },
 			      {
-				name: ";mg",
-				value: "Show the cat of MaxGentleman"
+				name: ";communitycats",
+				value: "Send random community cats"
 			      },
 			      {
-				name: ";leati",
-				value: "Show the cat of Laeti"
+				name: ";mg",
+				value: "Show the cat of MaxGentleman"
 			      },
 			    ],
 			    timestamp: new Date(),
