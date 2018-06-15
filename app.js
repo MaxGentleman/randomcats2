@@ -14,7 +14,7 @@ var pos;
 var po = ["http://gph.is/1UOqRIl","http://gph.is/1LjlEFE","http://gph.is/2kBGOXz","https://gph.is/1LKJYOO","http://gph.is/1syVkDT","http://gph.is/2xcqIOA","http://gph.is/1kADt78", "http://gph.is/19ljcLO","http://gph.is/1Wv2LH6","http://gph.is/1sCO2yQ","http://gph.is/1oMTlpa",];
 
 var cos;
-var co = ["http://gph.is/1UOqRIl","http://gph.is/1LjlEFE","http://gph.is/2kBGOXz",];
+var co = ["http://gph.is/1UOqRIl","http://gph.is/1LjlEFE","http://gph.is/2kBGOXz"];
 
 bot.on('ready', () => {
   console.log(`${bot.user.tag} is now connected on Discord! Made by MaxGentleman #1337, version 0.76.9`);
