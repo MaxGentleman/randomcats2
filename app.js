@@ -140,7 +140,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
         // Actually works
         message.channel.send(`<@${message.author.id}>`, {embed: welp}).then((msg) => {
         const creating = new Discord.RichEmbed()
-        .setColor('#A80B4F')
+        .setColor('#FF8000')
         .addField("Creating role...", "Please wait.")
         .setTimestamp()
         .setFooter(`${version}`)
@@ -150,7 +150,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
         color: '#138FF4',
         }).then(role => {
           const giving = new Discord.RichEmbed()
-          .setColor('#A80B4F')
+          .setColor('#FF8000')
           .addField("Giving role...", "Please wait.")
           .setTimestamp()
           .setFooter(`${version}`)
