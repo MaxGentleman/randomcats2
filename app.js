@@ -5,7 +5,7 @@ const prefix = ";" ;
 bot.login(process.env.TOKEN);
 
 bot.on('ready', () => {
-  bot.user.setActivity(prefix + "help", { type: 'PLAYING' });
+  bot.user.setGame('[;help] meowing');
 
 var cats;
 var cat = ["https://bit.ly/2KFuqUP","https://bit.ly/2Eyk0T3","https://bit.ly/2JVnh1w","https://read.bi/2IlgzVs","https://bit.ly/2xmrMP4","https://bit.ly/2G1cEI3","https://bit.ly/2KNl4Xj","https://bit.ly/2IcDCOE","https://bit.ly/2rviPjk","https://bit.ly/2rxnkJb","https://bit.ly/2rw2udp","https://bzfd.it/2ru8O60","https://bit.ly/2lcw7xD",];
