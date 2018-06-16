@@ -196,7 +196,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               .setColor('#FF8000')
               .addField("Already have the role!", "You already have the role.\nCan't enlist yourself twice.\n:/")
               .setTimestamp()
-              .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
+              .setFooter(`${version}`, "https://cdn.discordapp.com/attachments/378252696462819330/457437943867375628/Robot_Catten_LOGO_png.png")
               message.channel.send(`<@${message.author.id}>`, {embed: already});
             } else {
               message.member.addRole(role).catch(console.error);
@@ -206,7 +206,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               .setColor('#FF8000')
               .addField("Yay!", "You have been enlisted")
               .setTimestamp()
-              .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
+              .setFooter(`${version}`, "https://cdn.discordapp.com/attachments/378252696462819330/457437943867375628/Robot_Catten_LOGO_png.png")
               message.channel.send(`<@${message.author.id}>`, {embed: success});
               if (!data[message.guild.id]) data[message.guild.id] = {
               enlisted: 0,
