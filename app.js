@@ -4,6 +4,7 @@ const prefix = ";";
 const version = "0.4.9";
 var cmdExec = 0;
 let data = JSON.parse(fs.readFileSync("./data.json", "utf8"));
+const fs = require("fs");
 
 bot.login(process.env.TOKEN);
 
