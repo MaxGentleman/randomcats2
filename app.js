@@ -193,7 +193,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               // If author already has "Enlisted"/Custom Role (Support soon, will be able to change via app, web and bot), give this embed.
               const already = new Discord.RichEmbed()
               .setThumbnail("https://i.imgur.com/9uGcL7X.png")
-              .setColor('#138FF4')
+              .setColor('#FF8000')
               .addField("Already have the role!", "You already have the role.\nCan't enlist yourself twice.\n:/")
               .setTimestamp()
               .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
@@ -203,7 +203,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               // Gives Enlisted role.
               const success = new Discord.RichEmbed()
               .setThumbnail("https://i.imgur.com/9msrvYC.png")
-              .setColor('#138FF4')
+              .setColor('#FF8000')
               .addField("Yay!", "You have been enlisted")
               .setTimestamp()
               .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
@@ -220,7 +220,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               });
               const welche = new Discord.RichEmbed()
               .setThumbnail(message.author.avatarURL)
-              .setColor('#138FF4')
+              .setColor('#FF8000')
               .addField("New member!", `Say hello to **${message.author.username}**#${message.author.discriminator}!`)
               .setTimestamp()
               .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
