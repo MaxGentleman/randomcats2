@@ -159,7 +159,6 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
             msg.edit('sad');
           })
           const success = new Discord.RichEmbed()
-          .setThumbnail("https://i.imgur.com/9msrvYC.png")
           .setColor('#FF8000')
           .addField("Yay!", "You have been enlisted!")
           .setTimestamp()
@@ -192,7 +191,6 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
             if (message.member.roles.has(role.id)) {
               // If author already has "Enlisted"/Custom Role (Support soon, will be able to change via app, web and bot), give this embed.
               const already = new Discord.RichEmbed()
-              .setThumbnail("https://i.imgur.com/9uGcL7X.png")
               .setColor('#FF8000')
               .addField("Already have the role!", "You already have the role.\nCan't enlist yourself twice.\n:/")
               .setTimestamp()
@@ -202,7 +200,6 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               message.member.addRole(role).catch(console.error);
               // Gives Enlisted role.
               const success = new Discord.RichEmbed()
-              .setThumbnail("https://i.imgur.com/9msrvYC.png")
               .setColor('#FF8000')
               .addField("Yay!", "You have been enlisted")
               .setTimestamp()
