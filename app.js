@@ -192,7 +192,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               // If author already has "Enlisted"/Custom Role (Support soon, will be able to change via app, web and bot), give this embed.
               const already = new Discord.RichEmbed()
               .setColor('#FF8000')
-              .addField("Already have the role!", "You already have the role.\nCan't enlist yourself twice.\n:/")
+              .addField("Already have the role!", "You already have the role.\nCan't enlist yourself twice.")
               .setTimestamp()
               .setFooter(`${version}`, "https://cdn.discordapp.com/attachments/378252696462819330/457437943867375628/Robot_Catten_LOGO_png.png")
               message.channel.send(`<@${message.author.id}>`, {embed: already});
