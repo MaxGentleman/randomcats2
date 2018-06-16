@@ -123,7 +123,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
       let permission = message.guild.me.permissions.has(["MANAGE_ROLES", "EMBED_LINKS", "ATTACH_FILES"]);
       if (!permission) {
         const noperm = new Discord.RichEmbed()
-        .setColor("#A80B4F")
+        .setColor("#FF8000")
         .addField("Don't have permission!", "Well this is awkward... I don't have the following perms:\n`MANAGE_ROLES`\n`EMBED_LINKS`\n`ATTACH_FILES`\nPlease tell a moderator or give me those perms.")
         .setTimestamp()
         .setFooter(`${version}`)
@@ -133,7 +133,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
       if (!role) {
         // If server has no role, going to be changing that to be creating the role, then giving the role or if that fails with perms, give embed back.
         const welp = new Discord.RichEmbed()
-        .setColor('#A80B4F')
+        .setColor('#FF8000')
         .addField("Whoops!", "This server doesn't have the `Enlisted` role yet!\nI'll be attempting to create the role!")
         .setTimestamp()
         .setFooter(`${version}`)
@@ -160,7 +160,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
           })
           const success = new Discord.RichEmbed()
           .setThumbnail("https://i.imgur.com/9msrvYC.png")
-          .setColor('#138FF4')
+          .setColor('#FF8000')
           .addField("Yay!", "You have been enlisted, nice!\nNow you can go to <#433943731855556608>!\nwew.")
           .setTimestamp()
           .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
@@ -178,7 +178,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
           const ahChannel = message.guild.channels.find(c=> c.permissionsFor(message.guild.me).has("SEND_MESSAGES"));
           const welche = new Discord.RichEmbed()
           .setThumbnail(message.author.avatarURL)
-          .setColor('#138FF4')
+          .setColor('#FF8000')
           .addField("New member!", `Say hello to **${message.author.username}**#${message.author.discriminator}!`)
           .setTimestamp()
           .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
