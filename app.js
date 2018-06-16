@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const prefix = ";";
+const version = "0.4.9";
 
 bot.login(process.env.TOKEN);
 
