@@ -108,7 +108,7 @@ if(message.content.toLowerCase().startsWith(';say')) {
 }
 });
 
-bot.on('message', msg => {
+bot.on('message', message => {
   if (msg.content === ';dev') {
     msg.reply('The dev is MaxGentleman#1337 with the help of Laeti#1995 and Pie#9196');
   }
