@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const prefix = ";";
 const version = "0.4.9";
 var cmdExec = 0;
+let data = JSON.parse(fs.readFileSync("./data.json", "utf8"));
 
 bot.login(process.env.TOKEN);
 
