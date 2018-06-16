@@ -163,7 +163,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
           .setColor('#FF8000')
           .addField("Yay!", "You have been enlisted!")
           .setTimestamp()
-          .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
+          .setFooter(`${version}`, "https://cdn.discordapp.com/attachments/378252696462819330/457437943867375628/Robot_Catten_LOGO_png.png")
           msg.edit(`<@${message.author.id}>`, {embed: success});
           if (!data[message.guild.id]) data[message.guild.id] = {
           enlisted: 0,
@@ -181,7 +181,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
           .setColor('#FF8000')
           .addField("New member!", `Say hello to **${message.author.username}**#${message.author.discriminator}!`)
           .setTimestamp()
-          .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
+          .setFooter(`${version}`, "https://cdn.discordapp.com/attachments/378252696462819330/457437943867375628/Robot_Catten_LOGO_png.png")
           // Change this to the channel which was chosen in invite setup/dashboard
           ahChannel.send(`<@${message.author.id}>`, {embed: welche});
         }, 700).catch(error => {
@@ -223,7 +223,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               .setColor('#FF8000')
               .addField("New member!", `Say hello to **${message.author.username}**#${message.author.discriminator}!`)
               .setTimestamp()
-              .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
+              .setFooter(`${version}`, "https://cdn.discordapp.com/attachments/378252696462819330/457437943867375628/Robot_Catten_LOGO_png.png")
               // Change this to the channel which was chosen in invite setup/dashboard
               message.channel.send(`<@${message.author.id}>`, {embed: welche});
             }
