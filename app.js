@@ -112,8 +112,7 @@ bot.on('message', message => {
   if (message.content === ';dev') {
     message.reply('The dev is MaxGentleman#1337 with the help of Laeti#1995 and Pie#9196');
   }
-});
-
+	
 if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
     cmdExec++;
     // msg.guild.me.permissions.has(["VIEW_CHANNEL", "SEND_MESSAGES",]) for dashboard
@@ -227,3 +226,5 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
         }
     }
 }
+	
+       });
