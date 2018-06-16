@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+const prefix = ";" ;
 
 bot.login(process.env.TOKEN);
 
@@ -22,25 +23,25 @@ bot.on('ready', () => {
 bot.on('message', function (message){
   switch(message.content.toLowerCase()){
 		  
-    case ";pic" : cats = Math.floor(Math.random() * (cat.length - 0) + 0);
+    case prefix + "pic" : cats = Math.floor(Math.random() * (cat.length - 0) + 0);
                 message.channel.send(cat[cats]);
             break;
 
-    case ";gif" : pos = Math.floor(Math.random() * (po.length - 0) + 0);
+    case prefix + "gif" : pos = Math.floor(Math.random() * (po.length - 0) + 0);
                 message.channel.send(po[pos]);
             break;
 		  
-    case ";communitycats" : cos = Math.floor(Math.random() * (co.length - 0) + 0);
+    case prefix + "communitycats" : cos = Math.floor(Math.random() * (co.length - 0) + 0);
                 message.channel.send(co[cos]);
             break;
 
-    case ";laeti" : message.channel.send('Here is the cat of Laeti https://bit.ly/2JVIyrJ')
+    case prefix + "laeti" : message.channel.send('Here is the cat of Laeti https://bit.ly/2JVIyrJ')
             break;
 
-    case ";mg" : message.channel.send('Here is the cat of MaxGentleman https://bit.ly/2HSUH4e')
+    case prefix + "mg" : message.channel.send('Here is the cat of MaxGentleman https://bit.ly/2HSUH4e')
             break;
       
-    case ";help" : message.channel.send({embed: {
+    case prefix + "help" : message.channel.send({embed: {
 			    color: 16737792,
 			    author: {
 			      name: bot.user.username,
