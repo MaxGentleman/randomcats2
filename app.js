@@ -161,7 +161,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
           const success = new Discord.RichEmbed()
           .setThumbnail("https://i.imgur.com/9msrvYC.png")
           .setColor('#FF8000')
-          .addField("Yay!", "You have been enlisted, nice!\nNow you can go to <#433943731855556608>!\nwew.")
+          .addField("Yay!", "You have been enlisted!")
           .setTimestamp()
           .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
           msg.edit(`<@${message.author.id}>`, {embed: success});
@@ -204,7 +204,7 @@ if (message.content.toLowerCase().startsWith(prefix + "enlist")) {
               const success = new Discord.RichEmbed()
               .setThumbnail("https://i.imgur.com/9msrvYC.png")
               .setColor('#138FF4')
-              .addField("Yay!", "You have been enlisted, nice!\nNow you can go to <#433943731855556608>!\nwew.")
+              .addField("Yay!", "You have been enlisted")
               .setTimestamp()
               .setFooter(`${version}`, "https://raw.githubusercontent.com/PieBotDevs/enlister/master/branding/img/enlister_logo.png")
               message.channel.send(`<@${message.author.id}>`, {embed: success});
